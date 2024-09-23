@@ -1,0 +1,48 @@
+.navbar-success {
+	background-color: #acacac;
+}
+
+.nav-sidebar > .nav-item {
+  > .nav-link.active {
+    background-color: #242424 !important;
+  }
+}
+
+.btn-success {
+  color: #fff;
+  background-color: grey;
+  border-color: grey;
+  box-shadow: none;
+}
+
+.card-success.card-outline {
+  border-top: 3px solid grey;
+}
+
+.objectbrowser_table {
+  border: 1px solid;
+  padding: 4px;
+}
+
+.objectbrowser_td {
+  border: 1px solid;
+  padding: 4px;
+}
+
+table.recommendation-table tr:nth-child(even) td {
+  background-color: #CCCCCC;
+  padding: 8px;
+}
+
+table.recommendation-table tr:nth-child(odd) td {
+  background-color: #FFFFFF;
+  padding: 8px;
+}
+
+table.recommendation-table th {
+  padding: 8px;
+}
+
+tr.topline {
+  border-top: 1px solid black;
+}

@@ -1,0 +1,1 @@
+{LINK|<img src="tpl/downloadfile.png">|upload/{%file}|target::_new}

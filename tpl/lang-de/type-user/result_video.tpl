@@ -1,0 +1,2 @@
+<iframe width="70" height="50" src="https://www.youtube.com/embed/{%video_id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

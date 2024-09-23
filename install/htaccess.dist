@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.^\/]+)(.*)$ $1.php?urlhandler_getparams=$2 [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ".*" /vendor/booosta/urlhandler/src/urlhandler_proxy.php

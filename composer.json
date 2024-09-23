@@ -1,0 +1,75 @@
+{
+    "name": "booosta/installer",
+    "description": "Installer for the Booosta PHP Framework",
+    "license": "LGPL-3.0-only",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "booosta\\installer\\": "install"
+        }
+    },
+    "authors": [
+        {
+            "name": "Peter Buzanits",
+            "email": "peter@icb.at"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.3.0",
+        "booosta/webapp-package": "dev-master",
+        "booosta/adminlte": "dev-master",
+        "booosta/urlhandler": "dev-master",
+        "booosta/usersystem": "dev-master",
+        "booosta/db_authenticator": "dev-master",
+        "booosta/db_privileges": "dev-master",
+        "booosta/mysqli": "dev-master",
+        "booosta/ui_sortable": "dev-master",
+        "booosta/graph": "dev-master",
+        "booosta/graph1": "dev-master",
+        "booosta/graph2": "dev-master",
+        "booosta/objectbrowser": "dev-master",
+        "booosta/pdfwriter": "dev-master"
+    },
+    "scripts": {
+        "letsgo-test": [
+            "\\booosta\\installer\\Installer::letsgo"
+        ],
+        "letsgo": [
+            "@composer require booosta/webapp-package",
+            "@composer require booosta/adminlte",
+            "@composer require booosta/urlhandler",
+            "@composer require booosta/usersystem",
+            "@composer require booosta/db_authenticator",
+            "@composer require booosta/db_privileges",
+            "@composer require booosta/mysqli",
+            "@composer require booosta/ui_sortable",
+            "@composer require booosta/graph",
+            "@composer require booosta/graph1",
+            "@composer require booosta/graph2",
+            "@composer require booosta/objectbrowser",
+            "@composer require booosta/pdfwriter",
+            "\\booosta\\installer\\Installer::letsgo"
+        ],
+        "letsgo-minimal": [
+            "@composer require booosta/webapp-package",
+            "\\booosta\\installer\\Installer::letsgo_minimal"
+        ],
+        "mkfiles": [
+            "@putenv COMPOSER=vendor/booosta/mkfiles/composer.json",
+            "@composer mkfiles" 
+        ],
+        "mkuserfiles": [
+            "@putenv COMPOSER=vendor/booosta/mkfiles/composer.json",
+            "@composer mkuserfiles"
+
+        ]
+    },
+    "prefer-stable": true
+}

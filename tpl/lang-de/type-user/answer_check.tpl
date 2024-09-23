@@ -1,0 +1,1 @@
+{BCHECKBOX|answer[{%id}]|{%default}|texttitle::{*answertext}}
