@@ -22,7 +22,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=8.3.0",
+        "php": ">=8.2.0",
         "booosta/webapp-package": "dev-master",
         "booosta/adminlte": "dev-master",
         "booosta/urlhandler": "dev-master",
