@@ -1,11 +1,11 @@
 {
-    "name": "booosta/installer",
+    "name": "fb-energytransition/physec",
     "description": "Installer for the Booosta PHP Framework",
     "license": "LGPL-3.0-only",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "booosta\\installer\\": "install"
+            "fb-energytransition\\physec\\": "install"
         }
     },
     "authors": [
@@ -39,7 +39,7 @@
     },
     "scripts": {
         "letsgo-test": [
-            "\\booosta\\installer\\Installer::letsgo"
+            "\\fb-energytransition\\physec\\Installer::letsgo"
         ],
         "letsgo": [
             "@composer require booosta/webapp-package",
@@ -55,11 +55,11 @@
             "@composer require booosta/graph2",
             "@composer require booosta/objectbrowser",
             "@composer require booosta/pdfwriter",
-            "\\booosta\\installer\\Installer::letsgo"
+            "\\fb-energytransition\\physec\\Installer::letsgo"
         ],
         "letsgo-minimal": [
             "@composer require booosta/webapp-package",
-            "\\booosta\\installer\\Installer::letsgo_minimal"
+            "\\fb-energytransition\\physec\\Installer::letsgo_minimal"
         ],
         "mkfiles": [
             "@putenv COMPOSER=vendor/booosta/mkfiles/composer.json",
