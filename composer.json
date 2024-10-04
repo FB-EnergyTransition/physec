@@ -5,7 +5,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "fb-energytransition\\physec\\": "install"
+            "booosta\\installer\\": "install"
         }
     },
     "authors": [
@@ -23,23 +23,23 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=8.2.0",
-        "booosta/webapp-package": "dev-master",
-        "booosta/adminlte": "dev-master",
-        "booosta/urlhandler": "dev-master",
+        "booosta/webapp-package": "^4.0",
+        "booosta/adminlte": "^4.0",
+        "booosta/urlhandler": "^4.0",
         "booosta/usersystem": "dev-master",
-        "booosta/db_authenticator": "dev-master",
-        "booosta/db_privileges": "dev-master",
+        "booosta/db_authenticator": "^4.0",
+        "booosta/db_privileges": "^4.0",
         "booosta/mysqli": "dev-master",
-        "booosta/ui_sortable": "dev-master",
-        "booosta/graph": "dev-master",
-        "booosta/graph1": "dev-master",
-        "booosta/graph2": "dev-master",
-        "booosta/objectbrowser": "dev-master",
-        "booosta/pdfwriter": "dev-master"
+        "booosta/ui_sortable": "^4.0",
+        "booosta/graph": "^4.0",
+        "booosta/graph1": "^4.0",
+        "booosta/graph2": "^4.0",
+        "booosta/objectbrowser": "^4.0",
+        "booosta/pdfwriter": "^4.0"
     },
     "scripts": {
         "letsgo-test": [
-            "\\fb-energytransition\\physec\\Installer::letsgo"
+            "\\booosta\\installer\\Installer::letsgo"
         ],
         "letsgo": [
             "@composer require booosta/webapp-package",
@@ -55,11 +55,11 @@
             "@composer require booosta/graph2",
             "@composer require booosta/objectbrowser",
             "@composer require booosta/pdfwriter",
-            "\\fb-energytransition\\physec\\Installer::letsgo"
+            "\\booosta\\installer\\Installer::letsgo"
         ],
         "letsgo-minimal": [
             "@composer require booosta/webapp-package",
-            "\\fb-energytransition\\physec\\Installer::letsgo_minimal"
+            "\\booosta\\installer\\Installer::letsgo_minimal"
         ],
         "mkfiles": [
             "@putenv COMPOSER=vendor/booosta/mkfiles/composer.json",
