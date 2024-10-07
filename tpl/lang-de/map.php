@@ -18,5 +18,11 @@ $this->map = [
 'weak'                  => 'Schwach',
 'bad'                   => 'Kritisch',
 
+'question'              => 'Frage',
+'operator'              => 'Operator',
+'value'                 => 'Wert',
+
+'Search all columns'    => 'in allen Spalten suchen',
+
 ];
 

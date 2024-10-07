@@ -5,10 +5,10 @@ Framework::$CONFIG = [
 'site_name'              => '{sitename}',
 'page_title'             => '{sitename}',
 'page_title_short'       => '{sitename_short}',
-'allow_registration'     => {allow_registration},
-'confirm_registration'   => {confirm_registration},
+'allow_registration'     => true,
+'confirm_registration'   => true,
 'aes256_keyfile'         => 'local/key.php',
-'language'               => '{language}',
+'language'               => 'de',
 'template_module'        => 'adminlte',
   
 'db_module'              => '{db_module}',
@@ -36,7 +36,7 @@ Framework::$CONFIG = [
 'LOG_MODE'               => false,
 'BACKUPMODE'             => false,
 
-'serial_field'           => ['usersettings'],
+'serial_field'           => ['usersettings', 'conditions', 'categorizers', 'implemented'],
 'ESCAPE_CURL'            => false,
 'NO_DBCONNECT'           => false,
 
