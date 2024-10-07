@@ -93,6 +93,7 @@ class Worker extends \booosta\base\Base
     $pwd = $crypter->encrypt($this->var['password']);
     #\booosta\debug("password: {$var['password']}"); \booosta\debug("enc: $pwd");
     $this->DB->query("update adminuser set password='$pwd' where username='admin'");
+    $this->DB->query("commit");
 
     print "\nInstaller has finished now. Check if everything looks fine and then delete the install directory and the file .installervars\n\n";
   }
