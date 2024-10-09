@@ -8,7 +8,7 @@ Framework::$CONFIG = [
 'allow_registration'     => {allow_registration},
 'confirm_registration'   => {confirm_registration},
 'aes256_keyfile'         => 'local/key.php',
-'language'               => '{language}',
+'language'               => 'de',
 'template_module'        => 'adminlte',
   
 'db_module'              => '{db_module}',
@@ -22,6 +22,7 @@ Framework::$CONFIG = [
 'mail_smtp_params'       => [ 'host' => '{smtp_host}', 'auth' => true, 'username' => '{smtp_username}', 'password' => '{smtp_password}' ],
 
 'use_edit_delete_pics'   => true,
+'use_encrypted_ids'      => true,
 
 'jquery_loaded'          => true,
 'bootstrap_loaded'       => true,
@@ -30,13 +31,15 @@ Framework::$CONFIG = [
 'use_bootstrap_select'   => true,
 'templateparser_defaultvars' => ['boxsize' => '12,12,12,12'],
 
+'index_user'             => 'user_questions/start',
+
 # usually you do not need to change anything beyond this line
 
 'DEBUG_MODE'             => false,
 'LOG_MODE'               => false,
 'BACKUPMODE'             => false,
 
-'serial_field'           => ['usersettings'],
+'serial_field'           => ['usersettings', 'conditions', 'categorizers', 'implemented'],
 'ESCAPE_CURL'            => false,
 'NO_DBCONNECT'           => false,
 

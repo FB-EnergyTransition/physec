@@ -24,18 +24,19 @@
     "require": {
         "php": ">=8.2.0",
         "booosta/webapp-package": "^4.0",
-        "booosta/adminlte": "^4.0",
-        "booosta/urlhandler": "^4.0",
-        "booosta/usersystem": "dev-master",
-        "booosta/db_authenticator": "^4.0",
-        "booosta/db_privileges": "^4.0",
-        "booosta/mysqli": "dev-master",
-        "booosta/ui_sortable": "^4.0",
-        "booosta/graph": "^4.0",
-        "booosta/graph1": "^4.0",
-        "booosta/graph2": "^4.0",
-        "booosta/objectbrowser": "^4.0",
-        "booosta/pdfwriter": "^4.0"
+        "booosta/webapp": "4.0.4",
+        "booosta/adminlte": "4.0.3",
+        "booosta/urlhandler": "4.0.2",
+        "booosta/usersystem": "4.0.3",
+        "booosta/db_authenticator": "4.0.2",
+        "booosta/db_privileges": "4.0.3",
+        "booosta/mysqli": "4.0.3",
+        "booosta/ui_sortable": "4.0.3",
+        "booosta/graph": "4.0.2",
+        "booosta/graph1": "4.0.2",
+        "booosta/graph2": "4.0.4",
+        "booosta/objectbrowser": "4.0.3",
+        "booosta/pdfwriter": "4.0.2"
     },
     "scripts": {
         "letsgo-test": [
