@@ -531,8 +531,11 @@ trait Tools
       $html_text = '';
 
       if($val = $result['video']):
+        #b::debug("val: $val");
         $video_id = $this->getVideoID($val);
-        $html_video = $parser->parseTemplate('result_video.tpl', ['video_id' => $video_id, 'text' => $result['rtext'], 'id' => $result['id'], 'val' => $implementations[$result['id']] == 'on']);
+
+        if($video_id) $html_video = $parser->parseTemplate('result_video.tpl', ['video_id' => $video_id, 'text' => $result['rtext'], 'id' => $result['id'], 'val' => $implementations[$result['id']] == 'on']);
+        else $html_video = "{LINK|Video|$val}";;
       endif;
 
       if($val = $result['link']):
