@@ -22,6 +22,7 @@ Framework::$CONFIG = [
 'mail_smtp_params'       => [ 'host' => '{smtp_host}', 'auth' => true, 'username' => '{smtp_username}', 'password' => '{smtp_password}' ],
 
 'use_edit_delete_pics'   => true,
+'use_encrypted_ids'      => true,
 
 'jquery_loaded'          => true,
 'bootstrap_loaded'       => true,
@@ -29,6 +30,8 @@ Framework::$CONFIG = [
 'always_load_jquery'     => false,
 'use_bootstrap_select'   => true,
 'templateparser_defaultvars' => ['boxsize' => '12,12,12,12'],
+
+'index_user'             => 'user_questions/start',
 
 # usually you do not need to change anything beyond this line
 
