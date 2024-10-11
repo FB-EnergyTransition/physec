@@ -28,7 +28,7 @@
         "booosta/adminlte": "4.0.4",
         "booosta/urlhandler": "4.0.3",
         "booosta/usersystem": "4.0.4",
-        "booosta/db_authenticator": "4.0.2",
+        "booosta/db_authenticator": "4.0.3",
         "booosta/db_privileges": "4.0.4",
         "booosta/mysqli": "4.0.4",
         "booosta/ui_sortable": "4.0.4",
@@ -36,7 +36,7 @@
         "booosta/graph1": "4.0.3",
         "booosta/graph2": "4.0.5",
         "booosta/objectbrowser": "4.0.3",
-        "booosta/pdfwriter": "4.0.2"
+        "booosta/pdfwriter": "4.0.3"
     },
     "scripts": {
         "letsgo-test": [
