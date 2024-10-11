@@ -73,12 +73,18 @@ class Installer
 
   public static function load_physec()
   {
-    copy('install/file_664f65a0d4f7a.pdf', 'upload/file_664f65a0d4f7a.pdf');
-    copy('install/file_664f66301edc4.pdf', 'upload/file_664f66301edc4.pdf');
-    copy('install/file_664f68af160e4.pdf', 'upload/file_664f68af160e4.pdf');
+    foreach(glob("install/physec-files/*") as $file) copy($file, 'upload');
 
     $worker = new Worker(null);
     $worker->load('physec');
+  }
+
+  public static function load_prosec()
+  {
+    foreach(glob("install/prosec-files/*") as $file) copy($file, 'upload');
+
+    $worker = new Worker(null);
+    $worker->load('prosec');
   }
 }
 
@@ -105,7 +111,7 @@ class Worker extends \booosta\base\Base
     $this->DB->query("update adminuser set password='$pwd' where username='admin'");
     $this->DB->query("commit");
 
-    print "\nInstaller has finished now. Check if everything looks fine and then delete the install directory and the file .installervars\n\n";
+    print "\nInstaller has finished now.\n\n";
   }
 
   public function load($name)
