@@ -1,6 +1,5 @@
 {
     "name": "fb-energytransition/physec",
-    "version": "1.0",
     "description": "Installer for the Booosta PHP Framework",
     "license": "LGPL-3.0-only",
     "type": "library",
