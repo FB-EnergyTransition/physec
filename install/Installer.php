@@ -70,6 +70,16 @@ class Installer
     $worker = new Worker($var);
     $worker();
   }
+
+  public static function load_physec()
+  {
+    copy('install/file_664f65a0d4f7a.pdf', 'upload/file_664f65a0d4f7a.pdf');
+    copy('install/file_664f66301edc4.pdf', 'upload/file_664f66301edc4.pdf');
+    copy('install/file_664f68af160e4.pdf', 'upload/file_664f68af160e4.pdf');
+
+    $worker = new Worker(null);
+    $worker->load('physec');
+  }
 }
 
 
@@ -96,6 +106,14 @@ class Worker extends \booosta\base\Base
     $this->DB->query("commit");
 
     print "\nInstaller has finished now. Check if everything looks fine and then delete the install directory and the file .installervars\n\n";
+  }
+
+  public function load($name)
+  {
+    $sql = file_get_contents("install/$name.sql");
+    $this->DB->multi_query($sql);
+
+    print "\n$name data has been loaded.\n\n";
   }
 }
 
