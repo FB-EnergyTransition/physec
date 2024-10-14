@@ -73,7 +73,7 @@ class Installer
 
   public static function load_physec()
   {
-    foreach(glob("install/physec-files/*") as $file) copy($file, 'upload');
+    foreach(glob("install/physec-files/*") as $file) copy($file, 'upload/' . basename($file));
 
     $worker = new Worker(null);
     $worker->load('physec');
@@ -81,7 +81,7 @@ class Installer
 
   public static function load_prosec()
   {
-    foreach(glob("install/prosec-files/*") as $file) copy($file, 'upload');
+    foreach(glob("install/prosec-files/*") as $file) copy($file, 'upload/' . basename($file));
 
     $worker = new Worker(null);
     $worker->load('prosec');
