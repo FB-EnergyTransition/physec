@@ -27,6 +27,10 @@ Erklärung des Projektes Prosec
 
 ### Installation der Webapp
 
+Gehen Sie auf Ihrem Webserver in das Verzeichnis, in dem der Webspace als Unterverzeichnis liegt. Ersetzen Sie in
+den nachfolgenden Zeilen `myprojectname` durch den Namen des Verzeichnisses, das den Webspace beinhalten soll. In
+der Webserver-Konfiguration muss das Webroot also auf dieses Verzeichnis zeigen.
+
 ```
 #> composer create-project fb-energytransition/physec myprojectname
 #> cd myprojectname
