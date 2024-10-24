@@ -11,8 +11,6 @@ m PhySec-Projekt wurden innovative Ansätze entwickelt, um den wachsenden Bedroh
 
 Im Innovationsprojekt ProSec wurde ein praxisorientierter Leitfaden zur Umsetzung der DSGVO entwickelt, der speziell auf die Bedürfnisse von kleinen und mittleren Unternehmen (KMU) zugeschnitten war. Das Projektziel war es, KMU trotz digitaler Transformation und der Einführung von Industrie 4.0-Technologien bei der erfolgreichen Erfüllung der DSGVO-Anforderungen zu unterstützen. Auf einer benutzerfreundlichen Web-Plattform wurden MUST-HAVES zu den Themen Datenschutz und Datensicherheit beschrieben. Die Projektergebnisse wurden kontinuierlich evaluiert, um praxisnahe Lösungen für KMU zu bieten und schwerwiegende Folgen wie hohe Geldstrafen und Datenpannen zu verhindern.
 
-In the ProSec innovation project, a practical guide for implementing the GDPR was developed, specifically tailored to the needs of small and medium-sized enterprises (SMEs). The project aimed to help SMEs successfully meet GDPR requirements despite the challenges of digital transformation and the adoption of Industry 4.0 technologies. A user-friendly web platform was created to outline the MUST-HAVES on data protection and security. The project results were continuously evaluated to provide practical solutions for SMEs, helping to prevent serious consequences such as heavy fines and data breaches.
-
 ## Installation
 
 ### Voraussetzungen (Requirements)
